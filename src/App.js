@@ -1,16 +1,14 @@
-
-import { Router, BrowserRouter, Switch } from 'react-router-dom';
-import {Main, Room, NotFound404} from './components'
-import './App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { Room, Main, NotFound404 }from './pages'
 
 function App() {
   return (
     <BrowserRouter>
-    <Switch >
-      <Router exect path='/room/:id' component={Room} />
-      <Router exect path='/' component={Main} />
-      <Router component={NotFound404} />
-    </Switch>
+      <Switch>
+        <Route exact path='/room/:id' component={Room}/>
+        <Route exact path='/' component={Main}/>
+        <Route component={NotFound404}/>
+      </Switch>
     </BrowserRouter>
   );
 }

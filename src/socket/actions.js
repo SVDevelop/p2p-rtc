@@ -1,14 +1,13 @@
 const ACTIONS = {
     JOIN: 'join',
     LEAVE: 'leave',
-    SHARE_ROOMS: 'share-room',
+    SHARE_ROOMS: 'share-rooms',
     ADD_PEER: 'add-peer',
-    REMOVE: 'remove-peer',
-    RELAY_SPD: 'relay-spd',
+    REMOVE_PEER: 'remove-peer',
+    RELAY_SDP: 'relay-sdp',
     RELAY_ICE: 'relay-ice',
     ICE_CANDIDATE: 'ice-candidate',
-    SESSION_DESCRIPTION: 'aession-description',
-
-}
-
+    SESSION_DESCRIPTION: 'session-description'
+  }
+  
 module.exports = ACTIONS
